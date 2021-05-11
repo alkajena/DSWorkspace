@@ -1,0 +1,29 @@
+package binaryTree;
+
+public class NthOrderOfInorderTraversal {
+	Node root;
+	
+	static class Node{
+		int key;
+		Node left;
+		Node right;
+		
+		public Node(int key){
+			this.key=key;
+			left=right=null;
+		}
+	}
+	
+	public NthOrderOfInorderTraversal(int key){
+		root=new Node(key);
+	}
+	
+	public void nthInorder(Node root,int n){
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

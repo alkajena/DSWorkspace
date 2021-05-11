@@ -1,0 +1,29 @@
+package binaryTree;
+
+public class IterativePreOrderAndPostOrder {
+	Node root;
+	
+	static class Node{
+		int key;
+		Node left;
+		Node right;
+		
+		public Node(int key){
+			this.key=key;
+			left=right=null;
+		}
+	}
+	
+	public IterativePreOrderAndPostOrder(int key){
+		root=new Node(key);
+	}
+	
+	public static void preOrder(Node root){
+		stack<Node> st=new Stack<>();
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

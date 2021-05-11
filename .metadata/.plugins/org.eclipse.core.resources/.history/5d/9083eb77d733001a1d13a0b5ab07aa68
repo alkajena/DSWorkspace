@@ -1,0 +1,42 @@
+package binaryTree;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class FindAllPossibleBinaryTree {
+	Node root;
+	
+	static class Node{
+		int key;
+		Node left;
+		Node right;
+		
+		public Node(int key){
+			this.key=key;
+			left=right=null;
+		}
+	}
+	
+	public FindAllPossibleBinaryTree(int key){
+		root=new Node(key);
+	}
+	
+	public List<Node> findTrees(int[] in,int st,int end){
+		List<Node> trees=new ArrayList<>();
+		
+		if(st>end){
+			trees.add(null);
+			return trees;
+		}
+		
+		for(int i=st;i<end;i++){
+			List<Node> lTrees=findTrees(in,st,i-1);
+		}
+			
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

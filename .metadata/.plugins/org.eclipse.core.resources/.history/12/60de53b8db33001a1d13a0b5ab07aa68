@@ -1,0 +1,49 @@
+package binaryTree;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+public class NodeWithSumOfInOrderPredecessorAndSuccessor {
+	Node root;
+	static List<Node> list=new ArrayList<>();
+	static class Node{
+		int key;
+		Node left;
+		Node right;
+		int prev;
+		int aft;
+		
+		public Node(int key){
+			this.key=key;
+			left=right=null;
+			int prev=aft=0;
+		}
+	}
+	
+	public NodeWithSumOfInOrderPredecessorAndSuccessor(int key){
+		root=new Node(key);
+	}
+	public void inOrder(Node root){
+		if(root==null)
+			return;
+		inOrder(root.left);
+		list.add(root);
+		inOrder(root.right);
+	}
+	public static void sumOfInorderPredecessorAndSuccessor(Node root){
+		int j=0;
+		for(int i=0;i<list.size()-1;i++){
+			j=i+1;
+			list.get(i).aft=list.get(j).key;
+		}
+		
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,32 @@
+package binaryTree;
+
+public class NodeWithSumOfInOrderPredecessorAndSuccessor {
+	Node root;
+	
+	static class Node{
+		int key;
+		Node left;
+		Node right;
+		Node prev;
+		Node aft;
+		
+		public Node(int key){
+			this.key=key;
+			left=right=prev=aft=null;
+		}
+	}
+	
+	public NodeWithSumOfInOrderPredecessorAndSuccessor(int key){
+		root=new Node(key);
+	}
+	
+	public static void sumOfInorderPredecessorAndSuccessor(Node root){
+		List<Node> list=new ArrayList<>();
+		if()
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

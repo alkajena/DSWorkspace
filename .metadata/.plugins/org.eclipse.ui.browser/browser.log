@@ -1,0 +1,5 @@
+
+Jan 20, 2020 21:30:37.47 NEW SESSION
+Jan 20, 2020 21:30:37.47 [21664:11828:0120/213037.470:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -7
+Jan 21, 2020 01:31:07.14 [21664:11828:0121/013107.147:ERROR:socket_stream.cc(218)] Closing stream with result -2
+Jan 21, 2020 01:31:37.82 [21664:11828:0121/013137.819:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -7

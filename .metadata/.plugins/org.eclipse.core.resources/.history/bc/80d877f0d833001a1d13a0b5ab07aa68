@@ -1,0 +1,19 @@
+package binaryTree;
+
+public class NodeWithSumOfInOrderPredecessorAndSuccessor {
+	Node root;
+	
+	static class Node{
+		int key;
+		Node left;
+		Node right;
+		Node prev;
+		Node aft;
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

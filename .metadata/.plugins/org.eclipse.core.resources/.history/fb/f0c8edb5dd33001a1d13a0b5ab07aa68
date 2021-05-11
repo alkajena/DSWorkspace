@@ -1,0 +1,17 @@
+package binaryTree;
+
+public class PopulateInOrderSuccessor {
+	Node root;
+	
+	static class Node{
+		int key;
+		Node left;
+		Node right;
+		Node next;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
